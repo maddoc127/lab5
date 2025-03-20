@@ -1,5 +1,3 @@
-import java.util.Set;
-
 public class Doctor {
     private String doctorName;
     private int doctorID;
@@ -20,6 +18,11 @@ public class Doctor {
         this.doctorID = doctor.doctorID;
         this.specialization = doctor.specialization;
     }
+
+    public String toString(){
+        return "Doctor name: " + doctorName + "Doctor ID: " + doctorID + "Specialization: " + specialization + "Number of patients: " + noOfPatients;
+        }
+
     public void assignPatient(Patient patient){
         if (noOfPatients > 4){
             System.out.println("Bu doktor maksimum hasta sayısına sahip.");

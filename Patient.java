@@ -18,12 +18,36 @@ public Patient(Patient patient){
     this.entryDate = patient.entryDate;
 }
 
+public String getpatientName(){
+    return patientName;
+}
+
+public void setpatientName(String patName){
+    this.patientName = patName;
+}
+
+public int getpatientID(){
+    return patientID;
+}
+
+public void setpatientID(int patID){
+    this.patientID = patID;
+}
+
 public Doctor getpatientDoctor(){
     return patientDoctor;
 }
 
-public void setpatientdoctor(Doctor doctord){
-    this.patientDoctor = doctord;
+public void setpatientdoctor(Doctor patdoctor){
+    this.patientDoctor = patdoctor;
+}
+
+public int getentryDate(){
+    return entryDate;
+}
+
+public void setentryDate(int patEntryDate){
+    this.entryDate = patEntryDate;
 }
 
 public String toString(){
