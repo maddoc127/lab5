@@ -2,7 +2,7 @@ public class Doctor {
     private String doctorName;
     private int doctorID;
     private String specialization;
-    private Patient[] patients = new Patient[4];
+    private Patient[] docpatients = new Patient[4];
     private int noOfPatients = 0;
     private boolean isAvailable = true;
     private static int numberOfDoctors = 0;
@@ -19,19 +19,43 @@ public class Doctor {
         this.specialization = doctor.specialization;
     }
 
+    public String getdoctorName(){
+        return doctorName;
+    } 
+
+    public void setdoctorName(String docName){
+        this.doctorName = docName;
+    }
+
+    public int getdoctorID(){
+        return doctorID;
+    } 
+
+    public void setdoctorID(int docID){
+        this.doctorID = docID;
+    }
+
+    public String getdoctorspecialization(){
+        return specialization;
+    } 
+
+    public void setdoctorspecialization(String docspecialization){
+        this.specialization = docspecialization;
+    }
     public String toString(){
         return "Doctor name: " + doctorName + "Doctor ID: " + doctorID + "Specialization: " + specialization + "Number of patients: " + noOfPatients;
         }
 
     public void assignPatient(Patient patient){
         if (noOfPatients > 4){
-            System.out.println("Bu doktor maksimum hasta sayısına sahip.");
+            System.out.println("Doktor" + this + " maksimum hasta sayısına sahip.");
             isAvailable = false;
             return;
         }
-        patients[noOfPatients] = new Patient(patient);
+        docpatients[noOfPatients] = new Patient(patient);
         noOfPatients++;
         patient.setpatientdoctor(new Doctor(this));
+        System.out.println(patient + "assinged to" + this);
     }
 } 
 
