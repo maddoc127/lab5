@@ -1,11 +1,11 @@
 public class Patient {
     private String patientName;
-    private int patientID;
+    private String patientID;
     private Doctor patientDoctor;
     private int entryDate;
     private int numberOfPatients = 0;
 
-public Patient(String patName, int patID, int patEntryDate){
+public Patient(String patName, String patID, int patEntryDate){
 this.patientName = patName;
 this.patientID = patID;
 this.entryDate = patEntryDate;
@@ -26,11 +26,11 @@ public void setpatientName(String patName){
     this.patientName = patName;
 }
 
-public int getpatientID(){
+public String getpatientID(){
     return patientID;
 }
 
-public void setpatientID(int patID){
+public void setpatientID(String patID){
     this.patientID = patID;
 }
 

@@ -1,13 +1,13 @@
 public class Doctor {
     private String doctorName;
-    private int doctorID;
+    private String doctorID;
     private String specialization;
     private Patient[] docpatients = new Patient[4];
     private int noOfPatients = 0;
     private boolean isAvailable = true;
     private static int numberOfDoctors = 0;
 
-    public Doctor(String docName, int docID, String docSpecialization){
+    public Doctor(String docName, String docID, String docSpecialization){
         this.doctorName = docName;
         this.doctorID = docID;
         this.specialization = docSpecialization;
@@ -27,11 +27,11 @@ public class Doctor {
         this.doctorName = docName;
     }
 
-    public int getdoctorID(){
+    public String getdoctorID(){
         return doctorID;
     } 
 
-    public void setdoctorID(int docID){
+    public void setdoctorID(String docID){
         this.doctorID = docID;
     }
 
