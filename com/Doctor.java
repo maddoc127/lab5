@@ -4,7 +4,7 @@ public class Doctor {
     private String doctorName;
     private String doctorID;
     private String specialization;
-    private Patient[] docpatients = new Patient[4];
+    public Patient[] docpatients = new Patient[4];
     private int noOfPatients = 0;
     private boolean isAvailable = true;
     private static int numberOfDoctors = 0;
