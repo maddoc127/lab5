@@ -1,3 +1,5 @@
+package com;
+
 public class Doctor {
     private String doctorName;
     private String doctorID;
@@ -43,7 +45,7 @@ public class Doctor {
         this.specialization = docspecialization;
     }
     public String toString(){
-        return "Doctor name: " + doctorName + "Doctor ID: " + doctorID + "Specialization: " + specialization + "Number of patients: " + noOfPatients;
+        return "Doctor name: " + doctorName + " Doctor ID: " + doctorID + " Specialization: " + specialization + " Number of patients: " + noOfPatients;
         }
 
     public void assignPatient(Patient patient){

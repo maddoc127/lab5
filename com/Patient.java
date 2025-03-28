@@ -1,3 +1,5 @@
+package com;
+
 public class Patient {
     private String patientName;
     private String patientID;
@@ -51,6 +53,6 @@ public void setentryDate(int patEntryDate){
 }
 
 public String toString(){
-return "Patient name: " + patientName + "Patient ID: " + patientID + "Patient's doctor: " + patientDoctor + "Patient's entry date: " + entryDate;
+return "Patient name: " + patientName + " Patient ID: " + patientID + " Patient's doctor: " + patientDoctor + " Patient's entry date: " + entryDate;
 }
 }
